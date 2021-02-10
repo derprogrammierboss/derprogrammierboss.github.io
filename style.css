@@ -1,0 +1,38 @@
+/* Style of Body */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: #e0e0e0;
+  color: #000000;
+}
+
+
+
+/* Style of button */
+button.Link {
+  background-color: #ffffff;
+  border: 2px solid #008CBA;
+  color: #143d59;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 60%;
+  transition-duration: 0.4s;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+/* Style of button while cursor is hovering over it */
+button:hover {
+  background-color: #c7c7c7;
+}
+/* stops outline */
+button:focus { 
+  outline: none; 
+}
+
+h1 {
+  text-align: center;
+}
