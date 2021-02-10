@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Meta Teile -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link zu Oswald Extra-light 200 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <!-- Link zum Javascript Dokument -->
+  <script src="js/script.js"></script>
+  <!-- Link zum Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Realtime Clock</title>
+</head>
+
+<body onload="realtimeClock()">
+  <div class="container">
+    <h1>CLOCK</h1>
+    <div id="clock"></div>
+    <img class="background" src="image.jpg">
+  </div>
+
+
+</body>
+
+
+<script>
+  function realtimeClock() {
+
+    var rtClock = new Date();
+
+    var hours = rtClock.getHours();
+    var minutes = rtClock.getMinutes();
+    var seconds = rtClock.getSeconds();
+
+    // AM, PM system
+    var amPm = (hours < 12) ? "AM" : "PM";
+
+    // Convert hours component to 12-hour format
+    hours = (hours > 12) ? hours - 12 : hours;
+
+    hours = ("0" + hours).slice(-2);
+    minutes = ("0" + minutes).slice(-2);
+    seconds = ("0" + seconds).slice(-2);
+
+    // Show Clock
+    document.getElementById('clock').innerHTML = hours + ":" + minutes + ":" + seconds + "      " + amPm;
+    var t = setTimeout(realtimeClock, 500)
+  }
+</script>
+
+<!-- style -->
+
+<style>
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+  }
+
+  .background {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15%;
+    width: 100%;
+    position: absolute;
+    font-size: 80px;
+    letter-spacing: 6px;
+  }
+
+  #clock {
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    position: absolute;
+    font-size: 60px;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 25%;
+    color: black;
+  }
+</style>
+
+</html>
