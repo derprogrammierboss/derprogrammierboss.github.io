@@ -1,0 +1,37 @@
+html, body{
+  margin: 0;
+  width: 100%;
+}
+
+.container{
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+.background {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15%;
+  width: 100%;
+  position: absolute;
+  font-size: 80px;
+  letter-spacing: 6px;
+}
+
+#clock {
+  font-family: 'Oswald', sans-serif;
+  width: 100%;
+  position: absolute;
+  font-size: 60px;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 25%;
+  color: black;
+}
