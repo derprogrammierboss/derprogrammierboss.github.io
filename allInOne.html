@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+
+<head>
+  <!-- Link to JavaScript -->
+  <!-- Google Fonts Roboto 300 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <!-- meta -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- title of website -->
+  <title>Links</title>
+</head>
+
+<body>
+
+  <center>
+    <h1>Links</h1>
+
+    <h2>Websites</h2>
+
+    <!-- Link to Youtube -->
+    <button class="Link" onclick="myLink1()">
+      Youtube
+    </button>
+    <button class="Link" onclick="myLink2()">
+      GitHUB repository
+    </button>
+  </center>
+
+</body>
+
+
+<!-- Style -->
+<style>
+  /* Style of Body */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    background-color: #e0e0e0;
+    color: #000000;
+  }
+
+
+
+  /* Style of button */
+  button.Link {
+    background-color: #ffffff;
+    border: 2px solid #008CBA;
+    color: #143d59;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 60%;
+    transition-duration: 0.4s;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+  }
+
+  /* Style of button while cursor is hovering over it */
+  button:hover {
+    background-color: #c7c7c7;
+  }
+
+  /* stops outline */
+  button:focus {
+    outline: none;
+  }
+
+  h1 {
+    text-align: center;
+  }
+</style>
+
+
+
+<!-- JavaScript -->
+<script>
+  // Link to all Websites
+
+  // Link to Youtube
+  function myLink1() {
+    window.open("https://www.youtube.com/");
+  }
+  // Link to my GitHUB repository
+  function myLink2() {
+    window.open("https://github.com/derprogrammierboss?tab=repositories");
+  }
+</script>
+
+</html>
