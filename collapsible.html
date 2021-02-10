@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<head>
+  <!-- Link to Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Link to JavaScript -->
+  <script src="js/script.js"></script>
+  <!-- Roboto Light 300 Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="content">
+    <center>
+      <!-- Button which reveals hidden message -->
+      <button class="hiddenMessage" onclick="revealMessage()">
+        Click me!👇
+      </button>
+
+      <!-- Hidden Message -->
+      <article id="hiddenMessage" style="display:none">
+        Hello World! I can write text in here.
+      </article>
+
+      <article>
+        Hello World
+      </article>
+    </center>
+  </div>
+</body>
+
+
+<!-- Style -->
+<style> 
+body {
+  background-color: #143d59;
+  color: #f4b41a;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+/* Buttons */
+
+/* Style of button which activates Collapsible */
+button.hiddenMessage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: #a3a3a3;
+  border: 4px solid #008CBA;
+  color: #143d59;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 80%;
+}
+/* Stops button from getting an outline */
+button:focus { 
+  outline: none; 
+}
+
+
+/* Article */
+
+/* Style of hidden Message */
+article#hiddenMessage {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  background-color: #f4b41a;
+  color: #143d59;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  width: 80%;
+}
+
+.content {
+  margin: auto;
+  max-width: 1000px;
+}
+</style>
+
+
+<!-- JavaScript -->
+<script> 
+function revealMessage() {
+  var x = document.getElementById("hiddenMessage");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</html>
