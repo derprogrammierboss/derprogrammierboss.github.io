@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts Roboto Thin 100 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <title>Project 1</title>
+</head>
+
+
+<body>
+
+  <center>
+    <!-- Animation -->
+    <article class="animation">
+      Hello World!
+    </article>
+
+    <!-- Animation 1 -->
+    <article class="animation1">
+      Hello <br> World!
+    </article>
+
+    <!-- Animation 2 -->
+    <article class="animation2">
+      Hello World!
+    </article>
+
+    <!-- Animation 3 -->
+    <article class="animation3">
+      Hello World!
+    </article>
+
+  </center>
+
+
+
+</body>
+
+<style>
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  article {
+    font-size: 18px;
+    text-align: center;
+    background-color: #353434;
+    color: #b9b9b9;
+  }
+
+  /* Animation */
+  .animation {
+    padding: 15px;
+    margin: 20px;
+    width: 80%;
+    /* Transitions */
+    transition: 1s;
+    transition-delay: 0.1s;
+  }
+
+  .animation:hover {
+    width: 85%;
+  }
+
+
+  /* Animation 1 */
+  .animation1 {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+    padding: 15px;
+    /* Transition */
+    transition-delay: 0.1s;
+    transition-duration: 1s;
+  }
+
+  .animation1:hover {
+    transform: rotate(360deg);
+    width: 120px;
+    height: 120px;
+  }
+
+
+  /* Animation 2 */
+  .animation2 {
+    margin-top: 50px;
+    width: 80%;
+    padding: 15px;
+    background-color: #000000;
+  }
+
+
+  /* Animation 3 */
+  .animation3 {
+    margin-top: 50px;
+    width: 80%;
+    padding: 15px;
+    /* Animation */
+    animation-duration: 5s;
+    animation-name: ani2;
+    animation-iteration-count: infinite;
+  }
+
+  /* Disco effekt */
+  @keyframes ani2 {
+    0% {
+      background-color: #1d2e39;
+    }
+
+    12.5% {
+      background-color: #495A68;
+    }
+
+    25% {
+      background-color: #7c98a8;
+    }
+
+    37.5% {
+      background-color: #b5c0c4;
+    }
+
+    50% {
+      background-color: #949a8e;
+    }
+
+    62.5% {
+      background-color: #Af9d86;
+    }
+
+    75% {
+      background-color: #70655b;
+    }
+
+    87.5% {
+      background-color: #000000;
+    }
+  }
+</style>
+
+</html>
