@@ -1,8 +1,9 @@
 body {
-	//dev
-	//height:2000px;
-	padding:10px;
-	padding-bottom:50px;
+	/* dev
+	height:2000px; */
+  font-family: 'Roboto', sans-serif;
+	padding: 10px;
+	padding-bottom: 50px;
 }
 h1{
 	margin-bottom:2000px;
@@ -15,7 +16,7 @@ h1{
 	right:0;
 	z-index:1000;
 	
-	//give nav it's own compsite layer
+	/* give nav it's own compsite layer */
 	will-change:transform;
 	transform: translateZ(0);
 	
@@ -36,7 +37,7 @@ h1{
 		justify-content: center;
 	}
 	&__item--active {
-		//dev
+		/* dev */
 		color: red;
 	}
 	&__item-content { 
