@@ -4,10 +4,14 @@ body {
   font-family: 'Roboto', sans-serif;
 	padding-bottom: 70px;
 }
-
+html {
+	max-width: 1024px;
+}
+/* Style of the first header */
 .header{
 	text-align: center;
 }
+/* Stundenplan */
 .plan {
 	width: 50%;
 }
