@@ -2,13 +2,14 @@ body {
 	/* dev
 	height:2000px; */
   font-family: 'Roboto', sans-serif;
-	padding: 10px;
-	padding-bottom: 50px;
-}
-h1{
-	margin-bottom:2000px;
+	padding-bottom: 70px;
 }
 
+.header{
+	text-align: center;
+}
+
+/* Style for navbar */
 .mobile-bottom-nav {
 	position:fixed;
 	bottom:0;
@@ -26,5 +27,9 @@ h1{
 	
 	box-shadow: 0 -2px 5px -2px #333;
 	background-color: #fff;
-
+}
+.navbutton {
+	border-radius: 10px;
+	padding: 10px;
+	margin: 5px;
 }
