@@ -8,7 +8,9 @@ body {
 .header{
 	text-align: center;
 }
-
+.plan {
+	width: 90%;
+}
 /* Style for navbar */
 .mobile-bottom-nav {
 	position:fixed;
@@ -33,4 +35,7 @@ body {
 	border-radius: 10px;
 	padding: 10px;
 	margin: 5px;
+}
+.navbutton:hover {
+	background-color: #333333;
 }
