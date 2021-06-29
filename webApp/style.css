@@ -1,8 +1,5 @@
 body {
-	/* dev
-	height:2000px; */
   font-family: 'Roboto', sans-serif;
-	padding-bottom: 70px;
 }
 html {
 	max-width: 4024px;
@@ -15,31 +12,35 @@ html {
 .plan {
 	width: 90%;
 }
+
+
 /* Style for navbar */
-.mobile-bottom-nav {
-	position:fixed;
-	bottom:0;
-	left:0;
-	right:0;
-	z-index:1000;
-	
-	/* give nav it's own compsite layer */
-	will-change:transform;
-	transform: translateZ(0);
-	
-	display: flex;	
-	
-	height: 70px;
-	/* Colors */
+.navbar {
+  overflow: hidden;
+  background-color: #3b3b3b;
 	color: #000;
-	box-shadow: 0 -2px 5px -2px #333;
-	background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-.navbutton {
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #3b3b3b;
+  text-align: center;
+  padding: 5px;
 	border-radius: 10px;
-	padding: 10px;
-	margin: 5px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.navbutton:hover {
-	background-color: #333333;
+
+.navbar a:hover {
+  background-color: #3b3b3b;
+
+}
+
+.navbar a.active {
+  background-color: #04AA6D;
+  color: ;
 }
