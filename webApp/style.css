@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 html {
 	max-width: 4024px;
@@ -37,11 +38,5 @@ html {
 }
 
 .navbar a:hover {
-  background-color: #3b3b3b;
-
-}
-
-.navbar a.active {
-  background-color: #04AA6D;
-  color: ;
+  background-color: #575757;
 }
