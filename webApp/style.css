@@ -25,9 +25,10 @@ html {
 }
 
 .navbar a {
+  background-color: #3b3b3b;
+	color: #000;
   float: left;
   display: block;
-  color: #3b3b3b;
   text-align: center;
   padding: 5px;
 	border-radius: 10px;
